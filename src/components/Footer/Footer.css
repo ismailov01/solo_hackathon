@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Nanum+Gothic&display=swap");
+
+.coMainFtr {
+  font-family: "Nanum Gothic", sans-serif;
+  background: #f5f5f9;
+  height: auto;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  /* position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0; */
+}
+ .bireki {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} 
+
+.number {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.mainFtr h5 {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  font-weight: 100;
+  margin-bottom: 20px;
+} 
+
+ .mainFtr a {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 100;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.555);
+  /* margin-right: 10px; */
+}
+
+.iconsimg a {
+  margin-top: 50px;
+}
+
+.fourth {
+  color: rgb(192, 192, 192);
+  font-size: 14px;
+}
+
+.inpu {
+  width: 250px;
+} 
+@media screen and (max-width: 769px) {
+  .coMainFtr {
+    height: auto;
+  }
+}
+@media screen and (max-width: 426px){
+  .mainFtr h5 {
+    font-size: 13px;
+  }
+  .mainFtr a {
+    display: flex;
+    font-size: 12px;
+    margin: 6px;
+    margin-bottom: 4px;
+}
+.bireki {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.number {
+  display: block;
+  font-size: 11px;
+  margin-bottom: 15px;
+}
+.fourth {
+  font-size: 11px;
+}
+.form-label {
+  font-size: 11px;
+  margin-bottom: 0.5rem;
+}
+.right-side {
+  display: none;
+}
+}

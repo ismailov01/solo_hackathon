@@ -1,0 +1,134 @@
+* {
+  font-family: 'Lora', serif;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url('https://www.teahub.io/photos/full/337-3371690_transparent-transparent-background-camera-flash.jpg');
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.add-page, .edit-page {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+.cartochka img {
+  object-fit: cover !important;
+}
+.add-page form, .edit-page form {
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.add-page form input, .edit-page form input {
+  color: rgb(0, 0, 0);
+  margin: 5px;
+}
+
+.add-page form button, .edit-page form button {
+  margin-top: 15px;
+}
+
+.home-page {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  color: white
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.detail-image {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+}
+
+.detail-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/* 
+.detail-image img {
+  width: 90%;
+} */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.css-1wnsr1i {
+  border: none !important;
+  border-radius: 10px;
+}
+
+.favorite {
+  display: flex;
+  align-items: center;
+}
+.image {
+  width: 300px;
+}
+
+.modall {
+  display: flex;
+  justify-content: center;
+}
+
+.mainModal {
+  font-size: 17px;
+}
+
+.modal-content {
+  background: linear-gradient(to right, rgba(138, 138, 138, 0.522) 0%, rgba(110, 113, 114, 0.549) 36%, rgba(69, 74, 77, 0.878) 100%);
+  font-weight: 650;
+}
+@media screen and (max-width: 1025px){
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+}
+@media screen and (max-width: 426px){
+  .home-page {
+    display: flex;
+    color: white;
+}
+.btn2{
+  font-size: 9.3px;
+}
+.products {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 79%;
+}
+.css-ahj2mt-MuiTypography-root {
+  font-size: 12px !important;
+}
+.category_h2 {
+  font-size: 20px !important;
+}
+.pagination {
+  width: 90%;
+}
+}

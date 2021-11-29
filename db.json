@@ -1,0 +1,24 @@
+{
+    "products": [
+      {
+        "image": "https://yt3.ggpht.com/a/AATXAJwKgTp8GQtQ5uskfdJRIsq5ox-5acUL8FwIsD1J5g=s900-c-k-c0x00ffffff-no-rj",
+        "clip": "https://www.youtube.com/embed/fC1HF29n9UA",
+        "artist": "DVRST",
+        "name": "Endless love",
+        "album": "Summer",
+        "category": "phonk",
+        "price": 12,
+        "id": 1
+      },
+      {
+        "image": "https://i.scdn.co/image/ab67616d0000b273cd794393e0a8bdb1ac64e136",
+        "clip": "https://www.youtube.com/embed/VHf5IW2VyGc",
+        "artist": "104",
+        "name": "Сафари",
+        "album": "Safari",
+        "category": "rap",
+        "price": 10,
+        "id": 2
+      }
+    ]
+}
