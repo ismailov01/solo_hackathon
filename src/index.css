@@ -24,7 +24,53 @@ code {
 }
 .cartochka img {
   object-fit: cover !important;
+  height: 160px;
 }
+.cartochka img:hover {
+  animation-duration: .5s;
+  animation-name: more;
+  animation-iteration-count: 1;
+  height: 220px;
+}
+@keyframes more {
+   0% {
+    height: 160px;
+  }
+  5% {
+    height: 165px;
+  }
+  15% {
+    height: 170px;
+  }
+  25% {
+    height: 175px;
+  }
+  35% {
+    height: 180px;
+  }
+  45% {
+    height: 185px;
+  }
+  55% {
+    height: 190px;
+  }
+  65% {
+    height: 195px;
+  }
+  75% {
+    height: 200px;
+  }
+  85% {
+    height: 205px;
+  }
+  95% {
+    height: 210px;
+  }
+  to {
+    height: 215px;
+  }
+}
+
 .add-page form, .edit-page form {
   color: rgb(0, 0, 0);
   display: flex;
