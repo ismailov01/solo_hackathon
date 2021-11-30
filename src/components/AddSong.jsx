@@ -14,7 +14,7 @@ const AddSong = () => {
       console.log("Uploaded file");
     });
     getDownloadURL(fileRef)
-      .then((url) => {
+      .then((url) => {  
         setFileUrl(url);
       })
       .catch((error) => {

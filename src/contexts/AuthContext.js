@@ -4,8 +4,11 @@ import {
   createUserWithEmailAndPassword,
   onAuthStateChanged,
   signInWithEmailAndPassword,
+  getAuth, 
+  sendPasswordResetEmail,
   signOut,
 } from "firebase/auth";
+
 
 export const authContext = createContext();
 const INIT_STATE = {
@@ -78,12 +81,19 @@ const AuthContextProvider = (props) => {
     }
   };
 
+  function forgotPassword(email) {
+    return sendPasswordResetEmail(auth, email, {
+      url: 'http://localhost:3000/login'
+    })
+  }
+
   return (
     <authContext.Provider
       value={{
         createUserWithEmailAndPasswordHandler,
         loginUserWithEmail,
         logOut,
+        forgotPassword,
         user: state.user,
         adminEmail
       }}

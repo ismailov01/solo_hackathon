@@ -99,6 +99,7 @@ export default function NavBar() {
   const handleCloseLogin = () => setShowLogin(false);
   const handleShowLogin = () => setShowLogin(true);
 
+
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleCloseFavorite = () => setOpen(false);
@@ -146,6 +147,7 @@ export default function NavBar() {
         <Button color="inherit" onClick={handleShow} style={{ fontFamily: "Francois One, sans-serif", letterSpacing: "1px", fontSize: "16px" }}>
           Sign Up
         </Button>
+        
       </>
     );
   }
@@ -352,6 +354,7 @@ export default function NavBar() {
           handleCloseLogin={handleCloseLogin}
           showLogin={showLogin}
         />
+        
       </Box>
       <Favorites
         open={open}
