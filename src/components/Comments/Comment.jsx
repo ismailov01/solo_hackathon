@@ -75,9 +75,10 @@ const Comment = (props) => {
   }
   return (
     <>
-      <div className="mt-4 container">
-        <InputGroup className="mb-3 createComment">
+      <div className="mt-5" style={{display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center', margin: '5px auto'}}>
+        <InputGroup className="mb-3 createComment" style={{width: '50%'}}>
           <FormControl
+            
             rows={2}
             as="textarea"
             placeholder="Оставить комментаррий"
@@ -86,22 +87,19 @@ const Comment = (props) => {
             value={comment}
           />
           <Button
-            style={{ backgroundColor: "#31B8BF", border: "none" }}
+            style={{border: "none" }}
             onClick={creatingComment}
           >
             Отправить
           </Button>
         </InputGroup>
-      </div>
-
-      <div className="mt-4 container bg-secondary">
         {comments ? (
           comments
-            .sort((a, b) => b.createdAtMs - a.createdAtMs)
-            .map((item) => <CommentBody key={item.id} item={item} />)
-        ) : (
-          <h2>Loading...</h2>
-        )}
+          .sort((a, b) => b.createdAtMs - a.createdAtMs)
+          .map((item) => <CommentBody key={item.id} item={item} />)
+          ) : (
+            <h2>Loading...</h2>
+            )}
       </div>
     </>
   );
