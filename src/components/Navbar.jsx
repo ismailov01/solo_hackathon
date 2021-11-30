@@ -157,7 +157,7 @@ export default function NavBar() {
   if (user.email === adminEmail) {
     temp = (
       <Link to="/admin">
-        <Button variant="contained">Admin</Button>
+        <Button variant="contained" color="error">Admin</Button>
       </Link>
     );
   }

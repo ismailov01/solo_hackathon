@@ -6,10 +6,10 @@ import BasicTable from "../components/BasicTable";
 const AdminPage = () => {
   return (
     <div>
-      <h2 style={{color: 'white'}}>Admin Page</h2>
+      <h2 style={{color: 'white', textAlign: 'center'}}>Страница Администратора</h2>
       <Link to="/add">
-        <Button variant="contained" color="error">
-          Add product
+        <Button variant="contained" color="error" style={{display: 'flex', justifyContent: 'center'}}>
+          Добавить композицию
         </Button>
       </Link>
       <div>

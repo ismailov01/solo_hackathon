@@ -27,7 +27,7 @@ const Pagination = () => {
                     pageNumbers.map((page) => (
                         <li  key={page}>
                             <Button 
-                                style={{ background: page === currentPage ? '#FA2A3A' : 'blue', margin: '5px'}}
+                                style={{ background: page === currentPage ? '#FA2A3A' : 'black', margin: '5px'}}
                             variant="contained" 
                             onClick={() => handlePage(page)}
                             

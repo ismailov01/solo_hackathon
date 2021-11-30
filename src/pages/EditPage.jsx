@@ -11,9 +11,11 @@ const EditPage = () => {
     image: yup.string().required("Обязательно"),
     name: yup.string().min(3).max(30).required("Обязательно"),
     category: yup.string().min(2).max(30).required("Обязательно"),
-    composition: yup.string().min(10).max(255).required("Обязательно"),
-    price: yup.number().min(3).required("Обязательно"),
-   gram: yup.string().min(1).max(30).required("Обязательно"),
+    artist: yup.string().min(2).max(30).required("Обязательно"),
+    price: yup.number().required("Обязательно"),
+   album: yup.string().min(1).max(30).required("Обязательно"),
+   clip: yup.string().min(10).max(255).required("Обязательно"),
+   
   });
 
   const params = useParams()
@@ -26,7 +28,7 @@ const EditPage = () => {
 
   return (
     <div className="edit-page">
-      <h2>Изменить продукт</h2>
+      <h2>Изменить Композицию</h2>
       {
           productToEdit ? (
             <Formik
@@ -51,7 +53,7 @@ const EditPage = () => {
                   onChange={handleChange}
                 />
                 <TextField
-                  label="Название продукта"
+                  label="Название композиции"
                   type="text"
                   variant="standard"
                   name="name"
@@ -61,7 +63,7 @@ const EditPage = () => {
                   onChange={handleChange}
                 />
                 <TextField
-                  label="Категория продукта"
+                  label="Жанр"
                   type="text"
                   variant="standard"
                   name="category"
@@ -71,13 +73,13 @@ const EditPage = () => {
                   onChange={handleChange}
                 />
                 <TextField
-                  label="Состав"
+                  label="Исполнитель"
                   type="text"
                   variant="standard"
-                  name="composition"
-                  value={values.composition}
-                  error={!!errors.composition && touched.composition}
-                  helperText={touched.composition ? errors.composition : ""}
+                  name="artist"
+                  value={values.artist}
+                  error={!!errors.artist && touched.artist}
+                  helperText={touched.artist ? errors.artist : ""}
                   onChange={handleChange}
                 />
                
@@ -92,13 +94,23 @@ const EditPage = () => {
                   onChange={handleChange}
                 />
                 <TextField
-                  label="См/грамм"
+                  label="Название альбома"
                   type="text"
                   variant="standard"
-                  name="gram"
-                  value={values.gram}
-                  error={!!errors.gram && touched.gram}
-                  helperText={touched.gram ? errors.gram : ""}
+                  name="album"
+                  value={values.album}
+                  error={!!errors.album && touched.album}
+                  helperText={touched.album ? errors.album : ""}
+                  onChange={handleChange}
+                />
+                <TextField
+                  label="Ссылка на видео"
+                  type="text"
+                  variant="standard"
+                  name="clip"
+                  value={values.clip}
+                  error={!!errors.clip && touched.clip}
+                  helperText={touched.clip ? errors.clip : ""}
                   onChange={handleChange}
                 />
                 <Button variant="contained" color="primary" type="submit">

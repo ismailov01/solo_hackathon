@@ -15,7 +15,7 @@ code {
 }
 
 .add-page, .edit-page {
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -27,7 +27,7 @@ code {
   height: 160px;
 }
 .cartochka img:hover {
-  animation-duration: .5s;
+  animation-duration: .3s;
   animation-name: more;
   animation-iteration-count: 1;
   height: 220px;

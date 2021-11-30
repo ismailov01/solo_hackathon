@@ -22,44 +22,50 @@ export default function BasicTable() {
         <TableContainer component={Paper}>
           <Table sx={{ minWidth: 650 }} aria-label="simple table">
             <TableHead>
-              <TableRow>
+              <TableRow >
+              <TableCell align="right">№</TableCell>
                 <TableCell align="right">Изображение</TableCell>
-                <TableCell>Название продукта</TableCell>
-                <TableCell align="right">Состав</TableCell>
+                <TableCell>Название композиции</TableCell>
+                <TableCell align="right">Испонитель</TableCell>
+                <TableCell align="right">Альбом</TableCell>
+                <TableCell align="right">Жанр</TableCell>
                 <TableCell align="right">Цена</TableCell>
-                <TableCell align="right">См/грамм</TableCell>
                 <TableCell align="right">#</TableCell>
                 <TableCell align="right">#</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
-              {products.map((phone) => (
-                <TableRow
-                  key={phone.id}
+              {products.map((item) => (
+                <TableRow 
+                  key={item.id}
                   sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                 >
                   <TableCell align="right">
-                    <img width="70" src={phone.image} alt="phone" />
+                    {item.id}
+                  </TableCell>
+                  <TableCell align="right">
+                    <img width="70" src={item.image} alt="item" />
                   </TableCell>
                   <TableCell component="th" scope="row">
-                    {phone.name}
+                    {item.name}
                   </TableCell>
                   <TableCell align="right">
-                    <Tooltip title={phone.composition}>
-                      <p>{phone.composition.slice(0, 30)}...</p>
+                    <Tooltip title={item.artist}>
+                      <p>{item.artist}</p>
                     </Tooltip>
                   </TableCell>
-                  <TableCell align="right">{phone.price} сом</TableCell>
-                  <TableCell align="right">{phone.gram}</TableCell>
+                  <TableCell align="right">{item.album}</TableCell>
+                  <TableCell align="right">{item.category}</TableCell>
+                  <TableCell align="right">{item.price}$</TableCell>
                   <TableCell align="right">
-                    <Link to={`/admin/edit/${phone.id}`}>
-                      <Button color="warning" variant="outlined">
+                    <Link to={`/admin/edit/${item.id}`} style={{textDecoration: 'none'}}>
+                      <Button color="primary" variant="outlined">
                         Изменить
                       </Button>
                     </Link>
                   </TableCell>
                   <TableCell align="right">
-                    <Button onClick={() => deleteProduct(phone.id)}>
+                    <Button variant="contained" color="error" onClick={() => deleteProduct(item.id)}>
                       Удалить
                     </Button>
                   </TableCell>

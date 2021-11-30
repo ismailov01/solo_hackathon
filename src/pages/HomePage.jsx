@@ -11,6 +11,7 @@ import Pagination from "../components/Pagination";
 import MyCarousel from '../components/Carousel/Carousel';
 import { pink } from "@mui/material/colors";
 
+
 const HomePage = () => {
   const { getProducts, products, currentPosts } = useContext(clientContext);
   const navigate = useNavigate()

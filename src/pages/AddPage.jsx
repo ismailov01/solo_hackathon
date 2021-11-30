@@ -20,19 +20,23 @@ const AddPage = () => {
       .min(2, "Минимальное 2 символа")
       .max(30, "Максимальное 30 символов")
       .required("Данное поле обязательно"),
-    composition: yup
+    artist: yup
       .string()
-      .min(10, "Минимальное 10 символов")
-      .max(255, "Максимальное 255 символов")
+      .min(2, "Минимальное 2 символов")
+      .max(30, "Максимальное 30 символов")
       .required("Данное поле обязательно"),
     price: yup
       .number()
-      .min(3, "Минимальное 3 символа")
       .required("Данное поле обязательно"),
-    gram: yup
+    album: yup
       .string()
       .min(1, "Минимальный 1 символ")
       .max(50, "Максимальное 50 символов")
+      .required("Данное поле обязательно"),
+    clip: yup
+      .string()
+      .min(10, "Минимальное 10 символов")
+      .max(255, "Максимальное 255 символов")
       .required("Данное поле обязательно"),
   });
 
@@ -44,7 +48,7 @@ const AddPage = () => {
   }
   return (  
     <div className="add-page">
-      <h2>Добавить продукт</h2>
+      <h2>Добавить композицию</h2>
       <Formik 
         validationSchema={schema}
         onSubmit={handleSubmit}
@@ -52,9 +56,10 @@ const AddPage = () => {
           image: '',
             name: '',
             category: '',
-            composition: '',
+            artist: '',
             price: '',
-            gram: ''
+            album: '',
+            clip: '',
         }}
       >
         {({ handleSubmit, handleChange, values, touched, errors }) => (
@@ -70,7 +75,7 @@ const AddPage = () => {
               onChange={handleChange}
             />
             <TextField
-              label="Название продукта"
+              label="Название композиции"
               type="text"
               variant="standard"
               name="name"
@@ -80,7 +85,7 @@ const AddPage = () => {
               onChange={handleChange}
             />
             <TextField
-              label="Категория"
+              label="Жанр"
               type="text"
               variant="standard"
               name="category"
@@ -90,13 +95,13 @@ const AddPage = () => {
               onChange={handleChange}
             />
             <TextField
-              label="Состав:"
+              label="Исполнитель"
               type="text"
               variant="standard"
-              name="composition"
-              value={values.composition}
-              error={!!errors.composition && touched.composition}
-              helperText={touched.composition ? errors.composition : ''}
+              name="artist"
+              value={values.artist}
+              error={!!errors.artist && touched.artist}
+              helperText={touched.artist ? errors.artist : ''}
               onChange={handleChange}
             />
             
@@ -111,20 +116,30 @@ const AddPage = () => {
               onChange={handleChange}
             />
             <TextField
-              label="См/грамм"
+              label="Название альбома"
               type="text"
               variant="standard"
-              name="gram"
-              value={values.gram}
-              error={!!errors.gram && touched.gram}
-              helperText={touched.gram ? errors.gram : ''}
+              name="album"
+              value={values.album}
+              error={!!errors.album && touched.album}
+              helperText={touched.album ? errors.album : ''}
+              onChange={handleChange}
+            />
+            <TextField
+              label="Ссылка клипа"
+              type="text"
+              variant="standard"
+              name="album"
+              value={values.clip}
+              error={!!errors.clip && touched.clip}
+              helperText={touched.clip ? errors.clip : ''}
               onChange={handleChange}
             />
             <Button 
             variant="contained" 
             color="primary" 
             type="submit">
-            Добавить продукт
+            Добавить композицию
             </Button>
           </form>
         )}
