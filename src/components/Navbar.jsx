@@ -23,6 +23,7 @@ import SignUpModal from "./auth/SignUpModal";
 import SignInModal from "./auth/SignInModal";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import ShoppingCart from "@mui/icons-material/ShoppingCart";
+import BookmarkIcon from '@mui/icons-material/Bookmark';
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 import { clientContext } from "../contexts/ClientContext";
@@ -246,7 +247,7 @@ export default function NavBar() {
                 color="inherit"
               >
                 <Badge badgeContent={productsCountInFavorites} color="primary">
-                  <FavoriteIcon
+                  <BookmarkIcon
                     onClick={() => {
                       handleOpen();
                       getFavorite();
@@ -323,7 +324,7 @@ export default function NavBar() {
                 color="inherit"
               >
                 <Badge badgeContent={productsCountInFavorites} color="primary">
-                  <FavoriteIcon
+                  <BookmarkIcon
                     onClick={() => {
                       handleOpen();
                       getFavorite();

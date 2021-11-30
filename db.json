@@ -32,6 +32,17 @@
     }
   ],
   "likes": [
-    
+    {
+      "owner": "kubaismailov02@gmail.com",
+      "productId": "1",
+      "rate": 1,
+      "id": 1
+    },
+    {
+      "owner": "kubaismailov02@gmail.com",
+      "productId": "2",
+      "rate": 0,
+      "id": 2
+    }
   ]
 }

@@ -10,6 +10,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { clientContext } from '../contexts/ClientContext';
 import ReactCardFlip from 'react-card-flip';
+import BookmarkIcon from '@mui/icons-material/Bookmark';
 
 
 const MediaCard = (props) => {
@@ -40,7 +41,7 @@ const MediaCard = (props) => {
             <ShoppingCartIcon color={checkProductInCart(props.product.id) ? 'error' : 'primary'} />
         </Button>
           <Button size="small" onClick={() => addAndDeleteProductInFavorites(props.product)}>
-            <FavoriteIcon color={checkFavoriteInFavorites(props.product.id) ? 'error' : 'primary'} />
+            <BookmarkIcon color={checkFavoriteInFavorites(props.product.id) ? 'error' : 'primary'} />
         </Button>
         <Link to={`/product/${props.product.id}`}>
         <Button  size="small" style={{fontFamily: "revert"}}

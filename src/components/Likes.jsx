@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { BsFillHeartFill } from "react-icons/bs";
 import { useParams } from "react-router";
+import { authContext } from "../contexts/AuthContext";
 import { likesContext } from "../contexts/LikesContext";
 const Likes = () => {
   const { getLikes, likes, addLike, saveEditedLikes } =
@@ -9,7 +10,8 @@ const Likes = () => {
   useEffect(() => {
     getLikes(params.id);
   }, []);
-  let user = JSON.parse(localStorage.getItem("user"));
+  const {user} = useContext(authContext)
+  // let user = JSON.parse(localStorage.getItem("user"));
   let idFeedTemp,
     checkFeed,
     myRate = 0;
@@ -21,7 +23,7 @@ const Likes = () => {
     likes.forEach((item) => {
       if (
         item.productId === params.id &&
-        item.owner === user.currentUser.email
+        item.owner === user.email
       ) {
         idFeedTemp = item.id;
         checkFeed = true;
@@ -36,14 +38,14 @@ const Likes = () => {
   const handleRating = () => {
     if (checkFeed) {
       let editRate = {
-        owner: user.currentUser.email,
+        owner: user.email,
         productId: params.id,
         rate: myRate === 1 ? 0 : 1,
         id: idFeedTemp,
       };
       saveEditedLikes(editRate);
     } else {
-      addLike(user.currentUser.email, params.id, 1);
+      addLike(user.email, params.id, 1);
     }
   };
   return (
