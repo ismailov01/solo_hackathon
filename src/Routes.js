@@ -12,12 +12,8 @@ import CreditCardPage from "./pages/CreditCard/CreditCardPage";
 import ClientContextProvider from "./contexts/ClientContext";
 import DetailPage from "./pages/DetailPage";
 import CartPage from "./pages/CartPage";
-import Favorites from "./pages/Favorites";
-import AddSong from "./components/SongsData/AddSong";
-import ForgotPaswword from "./components/auth/ForgotPaswword";
 import CommentContextProvider from "./contexts/CommentContext";
 import LikesContextProvider from "./contexts/LikesContext";
-import Songs from "./components/SongsData/Songs";
 
 const MyRoutes = () => {
   return (
@@ -26,20 +22,18 @@ const MyRoutes = () => {
         <AdminContextProvider>
           <CommentContextProvider>
             <LikesContextProvider>
-            <BrowserRouter>
-              <NavBar />
-              <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/admin" element={<AdminPage />} />
-                <Route path="/add" element={<AddPage />} />
-                <Route path="/admin/edit/:id" element={<EditPage />} />
-                <Route path="/credit/card" element={<CreditCardPage />} />
-                <Route path="/product/:id" element={<DetailPage />} />
-                <Route path="/cart" element={<CartPage />} />
-                <Route path="/addsong" element={<AddSong />} />
-                <Route path="/songs" element={<Songs />} />
-              </Routes>
-            </BrowserRouter>
+              <BrowserRouter>
+                <NavBar />
+                <Routes>
+                  <Route path="/" element={<HomePage />} />
+                  <Route path="/admin" element={<AdminPage />} />
+                  <Route path="/add" element={<AddPage />} />
+                  <Route path="/admin/edit/:id" element={<EditPage />} />
+                  <Route path="/credit/card" element={<CreditCardPage />} />
+                  <Route path="/product/:id" element={<DetailPage />} />
+                  <Route path="/cart" element={<CartPage />} />
+                </Routes>
+              </BrowserRouter>
             </LikesContextProvider>
           </CommentContextProvider>
         </AdminContextProvider>
