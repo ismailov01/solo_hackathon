@@ -10,6 +10,7 @@ import { clientContext } from "../contexts/ClientContext";
 import Pagination from "../components/Pagination";
 import MyCarousel from '../components/Carousel/Carousel';
 import { pink } from "@mui/material/colors";
+import Footer from "../components/Footer/Footer";
 
 
 const HomePage = () => {
@@ -57,6 +58,39 @@ const HomePage = () => {
                   }}  />}
                 label="Phonk"
               />
+              <FormControlLabel
+                value="hip-hop"
+                control={<Radio
+                  sx={{
+                    color: pink[50],
+                    "&.Mui-checked": {
+                      color: pink[50],
+                    },
+                  }}  />}
+                label="Hip-Hop"
+              />
+              <FormControlLabel
+                value="rap"
+                control={<Radio
+                  sx={{
+                    color: pink[50],
+                    "&.Mui-checked": {
+                      color: pink[50],
+                    },
+                  }}  />}
+                label="Rap"
+              />
+              <FormControlLabel
+                value="pop"
+                control={<Radio
+                  sx={{
+                    color: pink[50],
+                    "&.Mui-checked": {
+                      color: pink[50],
+                    },
+                  }}  />}
+                label="Pop"
+              />
             </RadioGroup>
           </FormControl>
         </div>
@@ -67,6 +101,7 @@ const HomePage = () => {
                 <MediaCard product={product} key={product.id} />
               ))}
             </div>
+
           </>
         ) : (
           <h2>Loading...</h2>
@@ -76,6 +111,7 @@ const HomePage = () => {
       <div>
         <Pagination />
       </div>
+      <Footer />
     </>
   );
 };

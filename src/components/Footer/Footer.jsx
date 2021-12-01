@@ -32,12 +32,11 @@ const Footer = () => {
                     </div>
                     <div className="">
                         <h5>Мы на связи</h5>
-                        <span className="number">+996 554 15-81-55</span>
                         <span className="number">+996 508 07-07-85</span>
-                        <a target="blank" href="https://www.instagram.com/ismailovk2000/">
+                        <a target="blank" href="http://t.me/makers_hack_bot">
                             <img style={{ width: 35, height: 35, marginRight: '10px' }} src={telegram} />
                         </a>
-                        <a target="blank" href="https://www.instagram.com/kayaamoto/">
+                        <a target="blank" href="https://www.instagram.com/ismailovk2000/">
                             <img style={{ width: 35, height: 35, backgroundColor: '#fff' }} src={instagram} />
                         </a> 
                     </div>

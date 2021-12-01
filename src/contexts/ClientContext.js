@@ -106,13 +106,13 @@ const ClientContextProvider = (props) => {
     };
     post.subPrice = calcSubPrice(post);
     let chekArr = cart.products.filter((item) => {
-      return item.id === product.id;
+      return item.product.id === product.id;
     });
     if (chekArr.length === 0) {
-      cart.products.push(product);
+      cart.products.push(post);
     } else {
       cart.products = cart.products.filter((item) => {
-        return item.id !== product.id;
+        return item.product.id !== product.id;
       });
     }
     cart.totalPrice = calcTotalPrice(cart);
@@ -133,7 +133,7 @@ const ClientContextProvider = (props) => {
       };
     }
     let checkArr = cart.products.filter((item) => {
-      return item.id === id;
+      return item.product.id === id;
     });
     if (checkArr.length === 0) {
       return false;
@@ -164,7 +164,7 @@ const ClientContextProvider = (props) => {
     let cart = JSON.parse(localStorage.getItem("cart"));
     cart.products = cart.products.map((item) => {
       console.log(item);
-      if (item.id === id) {
+      if (item.product.id === id) {
         item.count = count;
         item.subPrice = calcSubPrice(item);
       }

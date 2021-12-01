@@ -91,7 +91,8 @@ code {
 .home-page {
   display: grid;
   grid-template-columns: 200px 1fr;
-  color: white
+  color: white;
+
 }
 
 .products {

@@ -22,9 +22,6 @@ for(let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++){
     pageNumbers.push(i)
 }
 
-
-
-// asdasd
     return (
         <div className="pagination">
             <ul>

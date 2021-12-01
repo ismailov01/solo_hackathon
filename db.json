@@ -7,7 +7,7 @@
       "name": "Endless love",
       "album": "Summer",
       "category": "phonk",
-      "price": 12,
+      "price": 5,
       "id": 1
     },
     {
@@ -17,20 +17,231 @@
       "name": "Сафари",
       "album": "Safari",
       "category": "rap",
-      "price": 10,
+      "price": 7,
       "id": 2
-    }
-  ],
-  "comments": [
+    },
     {
-      "text": "best music\n",
-      "owner": "kubaismailov02@gmail.com",
-      "productId": "1",
-      "createdAt": "2021-11-30T12:13:34.350Z",
-      "createdAtMs": 1638274414350,
-      "id": 1
+      "image": "https://i.ytimg.com/vi/BXD8-Rki5_g/maxresdefault.jpg",
+      "clip": "https://www.youtube.com/embed/BXD8-Rki5_g",
+      "artist": "Ирина Кайратовна",
+      "name": "Koke",
+      "album": "Janym",
+      "category": "pop",
+      "price": 4,
+      "id": 3
+    },
+    {
+      "image": "https://fuzzmusic.ru/wp-content/uploads/2020/05/new-project-2020-05-11t010005.468.jpg",
+      "clip": "https://www.youtube.com/embed/M6eq7rfOsi4",
+      "artist": "Coolio",
+      "name": "Gangsta's Paradise",
+      "album": "paradise",
+      "category": "rap",
+      "price": 8,
+      "id": 4
+    },
+    {
+      "image": "https://i.ytimg.com/vi/vRBli0AUdzA/maxresdefault.jpg",
+      "clip": "https://www.youtube.com/embed/nMID48IluOU",
+      "artist": "Macan",
+      "name": "Кино",
+      "album": "Голос улиц",
+      "category": "hip-hop",
+      "price": 13,
+      "id": 5
+    },
+    {
+      "image": "https://i.pinimg.com/originals/33/f6/fa/33f6faa2c6d6e162d88534521f07e9b3.jpg",
+      "clip": "https://www.youtube.com/embed/_GqTvdieBv8",
+      "artist": "Miyagi",
+      "name": "Samurai",
+      "album": "Kong",
+      "category": "rap",
+      "price": 12,
+      "id": 6
+    },
+    {
+      "image": "https://sputnik.kz/images/07e5/06/01/17217261.jpg",
+      "clip": "https://www.youtube.com/embed/x_xuXowwV98",
+      "artist": "Скриптонит",
+      "name": "Мультибрендовый",
+      "album": "2004",
+      "category": "hip-hop",
+      "price": 7,
+      "id": 7
+    },
+    {
+      "image": "https://i.ytimg.com/vi/K4JpMjtD6Bg/maxresdefault.jpg",
+      "clip": "https://www.youtube.com/embed/mRD0-GxqHVo",
+      "artist": "Glass Animals",
+      "name": "Haet waves",
+      "album": "Pulse",
+      "category": "pop",
+      "price": 3,
+      "id": 8
+    },
+    {
+      "image": "https://sun9-6.userapi.com/impg/c855632/v855632183/1f3582/-F0unFIizkE.jpg?size=604x571&quality=96&sign=98bf82209897cb0501f018d17fbc2aab&type=album",
+      "clip": "https://www.youtube.com/embed/uu2vAFlMl7U",
+      "artist": "Ulukmanapo",
+      "name": "Danzel W.",
+      "album": "Bishkek",
+      "category": "rap",
+      "price": 17,
+      "id": 9
+    },
+    {
+      "image": "https://yt3.ggpht.com/ytc/AKedOLTcymnYEMNdoUSk6t1GnTYF_SMs114DBfgihZkClA=s900-c-k-c0x00ffffff-no-rj",
+      "clip": "https://www.youtube.com/embed/Wm6M-UbWTng",
+      "artist": "Ulukmanapo",
+      "name": "Asian estetic",
+      "album": "312",
+      "category": "rap",
+      "price": 21,
+      "id": 10
+    },
+    {
+      "image": "https://i1.wp.com/def4onki.ru/wp-content/uploads/2020/09/18403597_1213509845442917_7544202443406740842_n.jpg?w=798&ssl=1",
+      "clip": "https://www.youtube.com/embed/iEkXnYDwAtc",
+      "artist": "Ankiv",
+      "name": "Меня не будет",
+      "album": "Gazgolder",
+      "category": "pop",
+      "price": 13,
+      "id": 11
+    },
+    {
+      "image": "https://i.ytimg.com/vi/DukOBTQZIWk/maxresdefault.jpg",
+      "clip": "https://www.youtube.com/embed/PU69q4Xc-IY",
+      "artist": "Xcho",
+      "name": "Вороны",
+      "album": "Glass Cage",
+      "category": "hip-hop",
+      "price": 10,
+      "id": 12
+    },
+    {
+      "image": "https://musclub.ru/data/catalog/1/7/8/1787f9b3154febc4b9760b7f34fb5a6f.jpeg",
+      "clip": "https://www.youtube.com/embed/rohUAIGpNgc",
+      "artist": "Xcho",
+      "name": "Only you",
+      "album": "Only you",
+      "category": "pop",
+      "price": 11,
+      "id": 13
+    },
+    {
+      "image": "https://irecommend.ru/sites/default/files/product-images/913072/iEmpuXzdJOAlgpgPvYTg.jpeg",
+      "clip": "https://www.youtube.com/embed/7T82Z7BwYfM",
+      "artist": "Navai",
+      "name": "Птичка",
+      "album": "Another",
+      "category": "hip-hop",
+      "price": 9,
+      "id": 14
+    },
+    {
+      "image": "https://tele-club.ru/storage/2018-08-16/6d7ff6fcea4ea2eecf3229e3c06d6224.jpeg",
+      "clip": "https://www.youtube.com/embed/olOnunHLoUc",
+      "artist": "Hammali",
+      "name": "У окна",
+      "album": "Love",
+      "category": "hip-hop",
+      "price": 8,
+      "id": 15
+    },
+    {
+      "image": "https://www.ok-magazine.ru/files/media_wysiwyg/122a1509.jpg",
+      "clip": "https://www.youtube.com/embed/Pw_AluJ1P2E",
+      "artist": "Jah Khalib",
+      "name": "Лейла",
+      "album": "Вселенная",
+      "category": "pop",
+      "price": 3,
+      "id": 16
+    },
+    {
+      "image": "https://avatars.mds.yandex.net/get-zen_doc/163667/pub_5db33a96d5bbc300ac33f83e_5db33aa4f557d000b2b78892/scale_1200",
+      "clip": "https://www.youtube.com/embed/jFBJnbTW_z8",
+      "artist": "Jah Khalib",
+      "name": "Medina",
+      "album": "Если что я Баха",
+      "category": "hip-hop",
+      "price": 23,
+      "id": 17
+    },
+    {
+      "image": "https://st2.liveonce.ru/files/618/d0246b69af05/audio/jpg/ff75f94b97b2216d7_53355412.jpg",
+      "clip": "https://www.youtube.com/embed/UD372-IYrKQ",
+      "artist": "The Limba",
+      "name": "Синие фиалки",
+      "album": "Я дома",
+      "category": "hip-hop",
+      "price": 18,
+      "id": 18
+    },
+    {
+      "image": "https://i.ytimg.com/vi/idfwrxzISkk/maxresdefault.jpg",
+      "clip": "https://www.youtube.com/embed/6Od0EEbmvZs",
+      "artist": "The Limba",
+      "name": "Смузи",
+      "album": "Я дома",
+      "category": "pop",
+      "price": 13,
+      "id": 19
+    },
+    {
+      "image": "https://i.ytimg.com/vi/Nva_mhUoKoQ/maxresdefault.jpg",
+      "clip": "https://www.youtube.com/embed/ao4RCon11eY",
+      "artist": "DVRST",
+      "name": "Closes eyes",
+      "album": "Closes eyes",
+      "category": "phonk",
+      "price": 23,
+      "id": 20
+    },
+    {
+      "image": "https://i.ytimg.com/vi/qesLAywRShc/maxresdefault.jpg",
+      "clip": "https://www.youtube.com/embed/b_TcupRrXo4",
+      "artist": "DVRST",
+      "name": "Motion",
+      "album": "Motion",
+      "category": "phonk",
+      "price": 14,
+      "id": 21
+    },
+    {
+      "image": "https://yt3.ggpht.com/ytc/AAUvwngYfPU0sERn_moQmHalKm3peootmzdUFgYLe4s1_Q=s900-c-k-c0x00ffffff-no-rj",
+      "clip": "https://www.youtube.com/embed/5R4Zu1nrAYY",
+      "artist": "Lxst Century",
+      "name": "Odium",
+      "album": "Another",
+      "category": "phonk",
+      "price": 14,
+      "id": 22
+    },
+    {
+      "image": "https://i.ytimg.com/vi/Gi0DI8DelrY/maxresdefault.jpg",
+      "clip": "https://www.youtube.com/embed/2263oFDoImk",
+      "artist": "LXST Century",
+      "name": "Amnesia",
+      "album": "Amnesia",
+      "category": "phonk",
+      "price": 15,
+      "id": 23
+    },
+    {
+      "image": "https://avatars.yandex.net/get-music-content/98892/03081c15.a.9253863-1/m1000x1000?webp=false",
+      "clip": "https://www.youtube.com/embed/CI1F2PPAkB4",
+      "artist": "Ulukmanapo",
+      "name": "Crocko Laco",
+      "album": "312",
+      "category": "rap",
+      "price": 30,
+      "id": 24
     }
   ],
+  "comments": [],
   "likes": [
     {
       "owner": "kubaismailov02@gmail.com",

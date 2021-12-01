@@ -1,5 +1,5 @@
 export const calcSubPrice = (product) => {
-    return product.count * product.price
+    return product.count * product.product.price
 };
 export const calcTotalPrice = (cart) => {
     let sum = 0;
