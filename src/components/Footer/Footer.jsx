@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import '../Footer/Footer.css'
-import facebook from './img/facebook.svg';
+import telegram from './img/Без названия.png';
 import instagram from "./img/instagram.svg";
 import { Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -35,10 +35,10 @@ const Footer = () => {
                         <span className="number">+996 554 15-81-55</span>
                         <span className="number">+996 508 07-07-85</span>
                         <a target="blank" href="https://www.instagram.com/ismailovk2000/">
-                            <img style={{ width: 35, height: 35 }} src={facebook} />
+                            <img style={{ width: 35, height: 35, marginRight: '10px' }} src={telegram} />
                         </a>
                         <a target="blank" href="https://www.instagram.com/kayaamoto/">
-                            <img style={{ width: 35, height: 35 }} src={instagram} />
+                            <img style={{ width: 35, height: 35, backgroundColor: '#fff' }} src={instagram} />
                         </a> 
                     </div>
                     <div className="col-3 right-side">
@@ -53,7 +53,7 @@ const Footer = () => {
                             }}
                         >
                             <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <Form.Label>Адрес электронной почты</Form.Label>
+                                <Form.Label style={{color: '#fff'}}>Адрес электронной почты</Form.Label>
                                 <Form.Control type="email" placeholder="Введите электронную почту" />
                                 <Form.Text className="text-muted">
                                     Мы никогда никому не передадим вашу электронную почту

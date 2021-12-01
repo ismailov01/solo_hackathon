@@ -39,7 +39,7 @@ const MyRoutes = () => {
                 <Route path="/addsong" element={<AddSong />} />
                 <Route path="/songs" element={<Songs />} />
               </Routes>
-              {/* <Footer/> */}
+              <Footer/>
             </BrowserRouter>
             </LikesContextProvider>
           </CommentContextProvider>

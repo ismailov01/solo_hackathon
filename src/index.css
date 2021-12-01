@@ -26,6 +26,7 @@ code {
   object-fit: cover !important;
   height: 160px;
 }
+
 .cartochka img:hover {
   animation-duration: .3s;
   animation-name: more;
